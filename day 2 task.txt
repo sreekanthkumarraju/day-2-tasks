@@ -1,0 +1,116 @@
+
+
+1.List 5 difference between Browser JS(console) v Nodejs
+  -------------------------------------------------------------------
+ 
+            Browser JS                                             |                             Nodejs
+           -------------                                               |                             --------
+1.   Java script is text based programming                    1.Nodejs is   javascript runtime 
+language that makes web pages interactive                        environment                                             
+ 
+2. It is included in the browser and can                         2.It allows the developer to run
+     only be run  in the browser                                             the Javascript ouside the browser
+                                                                                              and it is not part of the browser                                                         
+  
+3.It is used on client side                                               3.It is used on server side
+   
+4.Javascript is used on front end                                   4.It is used on back end (server side)
+   development                                                                  development         
+
+5.It can run in any browser engine                                5.Node Js comprise of v8 engine used to 
+					run Javascript
+6.First ever Javascript developed by                             6.Node Js developed by Ryan Dahl.
+   Brendan Eich.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+ ---------------------------------------------------------------------------------------------------------------------------
+  
+  How browser actually render a website:rendering  is processing any piece of code that we have written and showing the result of it
+  
+Parsing:
+
+  parsing is the process of breaking down code into individual chunks of code, verifying that all necessary inputs are included in the code, and acting on   the instructions dictated by the code.
+
+  previously  XML parsing:if any error in code then error page will appear so we didnt use it
+
+  Parsing flow 
+
+        HTML parsing
+        ---------------- 
+      1.Tokenizer : first step to parsing :It is breaking down text (stream of characters) into discreete tokens ie <div>  </div> into tokens
+          tag open -<  and   tag name-div and  tag close- >
+                       ------                       ------                       ---
+      2.After the tokenizer parse tree is constructed and then creation of DOM(Document Object Model) tree and then script execution
+
+      CSS parsing
+      ----------------
+       creation of CSSOM tree(Cascading Style sheet Object Model ) tree
+
+     tags like <script>,<link> and <style> will halt the parsing this is stop the parser to go through html and constructing a DOM tree -Reentrant means          paring process interruption.If included at bottom it wont interrupt parsing
+
+    Render or frame tree this process combines DOM and CSSOM tree which is actual representation of what will show on screen   
+    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Execute the below code and write your description in txt file
+ ---------------------------------------------------------------------
+
+a.typeof(1)
+     
+  output:Number
+
+  description :datatype  of integer is number
+  
+b.typeof(1.1)
+
+    output:Number
+
+     description:datatype  of decimal point number is number
+
+c.typeof('1.1')
+
+    output:String
+
+      description:datatype of any value written inside quotes is String
+        
+d.typeof(true)
+
+   output:Boolean
+
+    description:datatype of  values true or false is Boelean
+
+
+e.typeof(null)
+
+ output:Object
+
+ description:Its a bug in Java script
+
+f.typeof(undefined)
+    
+  output:String 'undefined'
+
+  description:it describes variable is declared bu value is not assigned 
+
+g.typeof([])
+
+   output:Object
+
+   description:Array in javascript is stored in terms of (key: value) pair so type of array is Object
+
+h.typeof({})
+
+   output:Object
+ 
+   description:datatype of object is object because everything is stored in terms of  (key:value)    pair
+
+i.typeof(NaN)
+
+  output:Number
+
+  description:Not a Number doesn't mean value is not numeric ,It meansvalue cannot be expressed   with numbers so NaN is numeric datatype  i,e Number 
+
+   
